@@ -23,7 +23,7 @@ st.write("Upload your patient data or enter it manually to receive a hospital-st
 # Load model and scaler
 model = joblib.load('heart_rf_model.pkl')
 scaler = joblib.load('heart_scaler.pkl')
-feature_columns = model.feature_names_in_
+feature_columns = joblib.load('feature_columns.pkl')
 
 # 📝 Manual Input Option
 with st.expander("📝 Or enter patient details manually"):
